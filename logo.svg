@@ -1,0 +1,17 @@
+<svg version="1.1"
+     width="120" height="250"
+     xmlns="http://www.w3.org/2000/svg">
+    <title>This is the logo of an evil organization in a story I'm writing. (Note: Said logo does not normally contain my initials in a circle.)</title>
+
+    <polygon points="17 75 110 150 17 225"
+             stroke="darkred" fill="lightgray" stroke-width="7" />
+
+    <polygon points="17 75 110 150 17 225"
+             stroke="red" fill="lightgray" stroke-width="5" />
+
+    <polygon points="50 126 55 144 70 144 60 154 65 169 50 159 35 169 40 154 30 144 45 144"
+             stroke="purple" fill="gold" stroke-width="1" />
+
+    <polygon points="50 174 55 156 70 156 60 146 65 131 50 141 35 131 40 146 30 156 45 156"
+             stroke="gold" fill="purple" stroke-width="1" />
+</svg>

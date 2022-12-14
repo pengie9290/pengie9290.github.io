@@ -1,0 +1,527 @@
+<!--Please note that all graphic and audio assets included in this project- barring the Daedalus logo- are all either vanilla/edited assets from Fire Emblem 6, 7, and 8. I do not claim them to be my own.-->
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./layoutCSS.css">
+</head>
+
+<body>
+    <header>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <!--Sidebar-->
+            <div class="sidebar">
+
+                <div class="searchbar">
+                    <input type="text" placeholder="Search IDs" maxlength="15" id="search" data-search />
+                    <div class="search_button" onclick="Search()">Search</div>
+                </div>
+
+                <div class="side_button" onclick="Former_Employees()"><u>Former Employees</u></div>
+                <div class="side_button" onclick="Test_Subjects()"><u>Test Subjects</u></div>
+                <div class="side_button" onclick="Persons_of_Interest()"><u>Persons of Interest</u></div>
+                <div class="side_button" onclick="Locations_of_Interest()"><u>Locations of Interest</u></div>
+                <div class="side_button" onclick="CLASSIFIED()"><u>CLASSIFIED</u></div>
+            </div>
+
+            <!--Primary Document-->
+            <div class="main_area">
+                <div class="document">
+                    <p style="text-align: center">Select a tab in the left-hand bar or insert an ID code in the search bar to view files.</p>
+                    <p style="text-align: center">Please note that data regarding specific facilities is not stored in this database.</p>
+                    <p style="text-align: center; color: lightgray; margin-top: 5%">Welcome! This is the author, pengie9290, speaking. In case that wasn't obvious.</p>
+                    <p style="text-align: center; color: lightgray">This was a little project I made recently for my web design class.</p>
+                    <p style="text-align: center; color: lightgray">This "database" is filled with salvaged files, belonging to Daedalus Labs, the "big bad" organization of the world I've been writing for the last few years.</p>
+                    <p style="text-align: center; color: lightgray">(Unlike the documents themselves, none of this light-grey text is canon, by the way.)</p>
+                    <p style="text-align: center; color: lightgray">By the way... There's a little game built into this database!</p>
+                    <p style="text-align: center; color: lightgray">Though you lack the clearance to view the "Classified" tab, those files are still present in the database!</p>
+                    <p style="text-align: center; color: lightgray">If you use the search bar to look up a classified document's ID, it will still open, regardless of your clearance!</p>
+                    <p style="text-align: center; color: lightgray">There are five classified documents currently included in this database.</p>
+                    <p style="text-align: center; color: lightgray">All five have their codes hidden somewhere within this webpage.</p>
+                    <p style="text-align: center; color: lightgray">If you can find all five, let me know!</p>
+                    <p style="text-align: center; color: lightgray">But be warned, one is hidden quite differently than the other four.</p>
+                    <p style="text-align: center; color: lightgray">I hope you enjoy this creation of mine! And let me know what you think of it on reddit!</p>
+                    <p style="text-align: center; color: lightgray">(Note: All graphic and audio assets- barring the logo to the right- are edited or taken from Fire Emblem 6, 7, and 8.)</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Sterling.png" alt="Yvonne Sterling Photograph"></h1>
+                    <p><u><b>Name:</b></u> Yvonne Sterling</p>
+                    <p><u><b>ID:</b></u> #S-G-362867</p>
+                    <p><u><b>Age:</b></u> 59 (biologically, at time of death)</p>
+                    <p><u><b>Professions:</b></u> Deceased (Formerly: General of the Fiertan Military, Executive Daedalus Scientist (genetics division))</p>
+                    <p><u><b>Family:</b></u> Victor Cromwell (husband), <redacted>[REDACTED]</redacted></p>
+                    <p><u><b>Magic Capabilities:</b></u> Obstructive (estimated scale 20.1)</p>
+                    <p><u><b>Personality:</b></u> Yvonne Sterling was known to be a cruel and sadistic woman. Given the nature of the murder for which she was executed by King Silvath, it appears her love for her late husband was genuine, despite public opinion believing otherwise. Further details are not known.</p>
+                    <p><u><b>Capability:</b></u> Yvonne Sterling possessed the ability to reduce the power of magic cast by those around her (an estimated 15 meter diameter), or even nullify it outright if her target’s magic was weaker than her own. Exact measurements of this power do not match that demonstrated during the Fiertan-Gaelan war, and are therefore likely corrupted or outdated. What made her a threat to us was her innate knowledge of the inner workings of Daedalus, access to our weapons and technology, and complete understanding of exactly how to make use of it. She had no qualms over throwing us under the bus, so to speak, while making use of all the knowledge and resources we once offered.</p>
+                    <p><u><b>Cause of Death:</b></u> Sentenced to death in Gaelan court of law and summarily executed.</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Victor.png" alt="Victor Cromwell Photograph"></h1>
+                    <p><u><b>Name:</b></u> Victor Cromwell</p>
+                    <p><u><b>ID:</b></u> #E-S-732873</p>
+                    <p><u><b>Age:</b></u> 31 (biologically, at time of death)</p>
+                    <p><u><b>Professions:</b></u> Deceased (Formerly: General of the Fiertan Military, Daedalus Chief Security Officer)</p>
+                    <p><u><b>Family:</b></u> Yvonne Sterling (wife), <redacted>[REDACTED]</redacted></p>
+                    <p><u><b>Magic Capabilities:</b></u> Pyrokinetic (estimated scale 19.8)</p>
+                    <p><u><b>Personality:</b></u> Victor Cromwell was a simple man, motivated only by money. His skills were ours so long as we paid well, and they were worth the price. Testimony of captured Fiertan soldiers suggest he deeply loved his wife, enough that her happiness and wellbeing became a motivator more powerful than greed, though only just.</p>
+                    <p><u><b>Capability:</b></u> Victor Cromwell possessed great pyrokinetic ability, far greater than expected when it was granted to him. Exact measurements of this power do not match that demonstrated during the Fiertan-Gaelan war, and are therefore likely corrupted or outdated. Cromwell was also a shrewd man, skilled at noting, guarding, and fixing many of the weak points in our supposedly “flawless” security.</p>
+                    <p><u><b>Cause of Death:</b></u> Killed in the final battle of the Fiertan-Gaelan war.</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Angel.png" alt="Angel Hosanna Photograph"></h1>
+                    <p><u><b>Name:</b></u> Angel Hosanna</p>
+                    <p><u><b>ID:</b></u> #S-G-264357</p>
+                    <p><u><b>Age:</b></u> 57 (biologically)</p>
+                    <p><u><b>Professions:</b></u> Mayor of Perdix Isle (Formerly: Soldier of the Gaelan Military, Daedalus Scientist (medical division))</p>
+                    <p><u><b>Family:</b></u> <redacted>[REDACTED]</redacted></p>
+                    <p><u><b>Magic Capabilities:</b></u> Electromagnetic (estimated scale 10.4)</p>
+                    <p><u><b>Personality:</b></u> While under Daedalus' employ, Angel Hosanna bore a very cold demeanor, with none of her emotions showing through what was most likely a facade. After having awoken after the Surge, Angel Hosanna’s character appears to have undergone a significant change, now being an incredibly conscientious, caring person seeking redemption for the “evils” performed at her superiors’ commands.</p>
+                    <p><u><b>Capability:</b></u> Angel Hosanna possesses electromagnetic magic. While this power appears above average, it is nothing unusual. The origin of this magic is unknown, but is speculated to be a result of the Surge.</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Yvonne Sterling</p>
+                    <h1><img src="./images/Fire_Beast.png" alt="Fire Beast Photograph"></h1>
+                    <p><u><b>Subject:</b></u> #E-C-4633766</p>
+                    <p><u><b>Common Name:</b></u> Fire Beast</p>
+                    <p><u><b>Magic Capabilities:</b></u> Pyrokinetic (scale 29.3); Kinetic (scale 10.4); Chemical (scale 4.3)</p>
+                    <p><u><b>Scale:</b></u> Height 9.8m (16.5m upright); Length 25.7m (17.1m body + 8.6m tail); Wingspan 36.2m (at full extension)</p>
+                    <p><u><b>Weight:</b></u> <redacted>[FOLLOWING 'WEIGHT' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p><u><b>Recorded Maximum Velocity:</b></u> 64kmh grounded; 144kmh in flight</p>
+                    <p><u><b>Reproductive capabilities:</b></u> None. Subject lacks any reproductive organs, and is incapable of asexual reproduction.</p>
+                    <p><u><b>Genetic Material:</b></u> Body spliced from Loxodonta, Balaenoptera Musculus, and Ouroborus Cataphractus; Claws spliced from Ursus Maritimus, Dryophytes Versicolor, and Harpia harpyja; Wings spliced from Acerodon Jubatus and Diomedea Exulans; Fangs spliced from Crocodylus Porosus, Hippopotamus Amphibius, and Carcharhinus Leucas; Brain spliced from <redacted>[FOLLOWING 'GENETIC MATERIAL' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p></p>
+                    <p><u><b>Examination Results:</b></u></p>
+                    <p>Subject has an incredibly aggressive demeanor, and appears to attack anything and everything it can with intent to kill.</p>
+                    <p>Subject's vitals appear to naturally stabilize when not under considerable stress, even with sealed chemical magic.</p>
+                    <p>Subject's pyrokinetic magic is recorded reaching temperatures as high as 3245.81 K and is recorded reaching a range of 63.4m. Subject's only recorded uses of pyrokinetic magic have been launched from the mouth akin to a flamethrower.</p>
+                    <p>Subject's kinetic magic has only been recorded being used as a tool for flight. When kinetic magic is sealed, subject appears incapable of taking flight due to mass.</p>
+                    <p>Subject's chemical magic has been recorded healing wounds inflicted during both testing and containment breaches. Subject has shown no signs of using chemical magic offensively or to treat wounds of other creatures.</p>
+                    <p>Subject's bite force has been recorded at a maximum of <redacted>[FOLLOWING 'EXAMINATION RESULTS' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p></p>
+                    <p><u><b>Containment Procedures:</b></u></p>
+                    <p>Subject is to be kept in a refrigerated room. Subject is to be chained in place with little freedom for movement. Subject is to be fed through steel tube through hole in esophagus. Subject is to wear a reinforced steel muzzle at all times. Magic Seal is to be kept active in subject's chamber at all times. Subject is only to be granted any freedom of movement during testing, with heavy artillery on standby in case of an attempted breach. No testing is to be performed while Daedalus employees are present within the subject's chamber. In the case of a containment breach, the only reliable method of containing the subject is <redacted>[FOLLOWING 'CONTAINMENT PROCEDURES' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p></p>
+                    <p><u><b>Additional Notes:</b></u></p>
+                    <p>At the moment, this subject is the only one of its kind, but it shows promise for potential military applications. The largest flaw is that this creature does not appear to be controllable, so its only application will be to let it rampage and create mass destruction before killing it with heavy artillery so Daedalus operatives can secure the destroyed area safely. Military application is currently awaiting approval from Dr. Thorne.</p>
+                    <p><u><b>Vocal Audio Sample:</b></u></p>
+                    <p><audio controls><source src="./sfx/firebeast.wav" type="audio/wav"><redacted>[FOLLOWING ‘AUDIO SAMPLE’ DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></audio></p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Yvonne Sterling</p>
+                    <h1><img src="./images/Frost_Beast.png" alt="Frost Beast Photograph"></h1>
+                    <p><u><b>Subject:</b></u> #E-C-4722437</p>
+                    <p><u><b>Common Name:</b></u> Frost Beast</p>
+                    <p><u><b>Average Magic Capabilities:</b></u> Cryonic (scale 21.8); Kinetic (scale 6.3); Chemical (scale 2.1)</p>
+                    <p><u><b>Average Scale:</b></u> Height 5.9m (9.9m upright); Length 15.4m (10.3m body + 5.2m tail); Wingspan 21.7m (at full extension)</p>
+                    <p><u><b>Weight:</b></u> <redacted>[FOLLOWING 'WEIGHT' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p><u><b>Recorded Maximum Velocity:</b></u> <redacted>[FOLLOWING ‘RECORDED MAXIMUM VELOCITY’ DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p><u><b>Reproductive capabilities:</b></u> Untested; hypothesized to be similar to humans</p>
+                    <p><u><b>Post-Surge Addendum by Dr. Ethan Thorne:</b></u> Due to the existence of the Yarostian empire, it is clear that individuals of this species are capable of sexual reproduction. Whether or not they lay eggs or birth live young is currently unconfirmed.</p>
+                    <p><u><b>Genetic Material:</b></u> Body spliced from Homo Sapiens, Ouroborus Cataphractus, and <redacted>[FOLLOWING 'GENETIC MATERIAL' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p></p>
+                    <p><u><b>Examination Results:</b></u></p>
+                    <p>Subjects appear as fully cognizant of themselves and their surroundings as their human base prior to experimentation.</p>
+                    <p>Subjects have been recorded speaking fluently with one another and employees, indicating their knowledge and/or skills prior to experimentation remain mostly intact.</p>
+                    <p>Subjects all show clear signs of both sentience and sapience.</p>
+                    <p>Subjects’ cryonic magic <redacted>[FOLLOWING 'EXAMINATION RESULTS' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p></p>
+                    <p><u><b>Containment Procedures:</b></u></p>
+                    <p>Subjects are to be kept shackled in cells affected by magic seals. To be transported, subjects must be tranquilized, have muzzles attached, and be accompanied by at least two members of security wielding firearms with armor-piercing rounds. Water and nutrients are to be delivered in bags through special chutes built into each cell.</p>
+                    <p><u><b>Vocal Audio Sample:</b></u></p>
+                    <p><audio controls><source src="./sfx/frostbeast.wav" type="audio/wav"><redacted>[FOLLOWING ‘AUDIO SAMPLE’ DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></audio></p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Yvonne Sterling</p>
+                    <h1><img src="./images/image_corrupted.png" alt="Shadow Beast Photograph (corrupted)"></h1>
+                    <p><u><b>Subject:</b></u> #E-C-7423697</p>
+                    <p><u><b>Common Name:</b></u> Shadow Beast</p>
+                    <p><u><b>Magic Capabilities:</b></u> Shadow (scale <redacted>[FOLLOWING ‘MAGIC CAPABILITIES’ DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p><u><b>Scale:</b></u> Height 12.7m; Length 40.7m <redacted>[FOLLOWING ‘SCALE’ DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p><u><b>Weight:</b></u> <redacted>[FOLLOWING 'WEIGHT' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p><u><b>Recorded Maximum Velocity:</b></u> 107kmh in water</p>
+                    <p><u><b>Reproductive capabilities:</b></u> None. Subject lacks any reproductive organs, and is incapable of asexual reproduction.</p>
+                    <p><u><b>Genetic Material:</b></u> Body spliced from Loxodonta, Balaenoptera Musculus, and Muraenidae; Jaws spliced from Crocodylus Porosus, Carcharhinus Leucas, and <redacted>[FOLLOWING 'GENETIC MATERIAL' DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p></p>
+                    <p><u><b>Examination Results:</b></u></p>
+                    <p>The subject is noted to be unexpectedly resilient in toxic, supposedly uninhabitable waters. The subject’s magic allows it <redacted>[FOLLOWING ‘EXAMINATION RESULTS’ DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></p>
+                    <p></p>
+                    <p><u><b>Containment Procedures:</b></u></p>
+                    <p>As the subject is not capable of locomotion out of the water, it is to be kept unrestrained within a water tank with approximate dimensions 60m x 30m x 15m. An artificial current is to flow through this tank at all times, so as to pass oxygen over the subject’s gills. Nutrients are to be dropped into the tank through the use of a crane. Personnel are not to approach within 10 meters of the tank unless the subject has been tranquilized.</p>
+                    <p></p>
+                    <p><u><b>Additional Notes:</b></u></p>
+                    <p>The subject’s ability to turn functionally invisible in the dark will make it incredibly difficult to examine- and more importantly control- in field tests. Are you sure utilizing this thing is truly a good idea, Dr. Thorne? I’m proud the subject could be created, but I do not see any way deploying this subject will not come back to bite us, possibly in a literal sense. I am formally requesting this project be discontinued for our own safety and security’s sake.</p>
+                    <p><u><b>Addendum by Dr. Ethan Thorne:</b></u> At Dr. Sterling’s request, all experimentation and related testing regarding #E-C-7423697 is now discontinued. The subject will be euthanized shortly.</p>
+                    <p><u><b>Addendum #2 by Dr. Ethan Thorne:</b></u> The subject’s Chemical magic appears to have rendered it immune to euthanization. In light of this, the currents in the subject’s tank will be deactivated and the subject will no longer be fed, so it either suffocates or starves to death instead. We will not waste resources and the safety of personnel on causing the death of this subject.</p>
+                    <p><u><b>Vocal Audio Sample:</b></u></p>
+                    <p><audio controls><source src="./sfx/shadowbeast.wav" type="audio/wav"><redacted>[FOLLOWING ‘AUDIO SAMPLE’ DATA IS CORRUPTED AND CANNOT BE ACCESSED]</redacted></audio></p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Edrick.png" alt="Edrick Silvath Photograph"></h1>
+                    <p><u><b>Name:</b></u> Edrick Silvath</p>
+                    <p><u><b>ID:</b></u> N/A</p>
+                    <p><u><b>Document ID:</b></u> #DOC-337425</p>
+                    <p><u><b>Age:</b></u> 57</p>
+                    <p><u><b>Profession:</b></u> King of Gaela</p>
+                    <p><u><b>Magic Capabilities:</b></u> Pyrokinetic (estimated output 29.6); Chemical (estimated output 7.4)</p>
+                    <p><u><b>History:</b></u> Edrick Silvath was born to servants in the Gaelan royal palace, trained alongside the prince, and joined the royal guard at age 22. Following the deaths of Gaela’s royal and noble families during Fierte’s invasion, Silvath united the fragmented country, repelled the invasion, and was crowned Gaela’s new king.</p>
+                    <p><u><b>Personality:</b></u> Kind and honest to a fault. Places the well-being of his people, and to a lesser extent the world as a whole, above his own. Appears to suffer a severe case of survivor’s guilt.                </p>
+                    <p><u><b>Capability:</b></u> Silvath’s pyrokinetic magic appears comparable to that of an #E-C-4633766 specimen (Fire Beast), and can likely burn through even the best shielding we have produced in seconds. Silvath lacks a detailed understanding of human biology and thus cannot utilize chemical magic to heal others effectively, but is still capable of unconsciously healing lesser wounds on his own body, as well as poisons. Silvath is well-versed in melee combat and military tactics, having led a military composed mostly of untrained civilians to victory in the only war since the new world began.</p>
+                    <p><u><b>Response:</b></u> Edrick Silvath is not a threat that can be opposed directly. Between Silvath’s guards and his own martial and magical prowess, any attempted assassination is likely to end in failure. Silvath and his forces fought and killed multiple escaped Fire Beasts during the war, so it is unlikely a military strike will be capable of putting him down either. Our objectives do not require us to oppose King Silvath on Gaelan soil, and thus the best course of action for combating him is simply to avoid conflict. Should he seek it out himself on foreign soil, it will be us deciding the terrain, and where every advantage sans numbers will be in our favor.</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> <redacted>[REDACTED]</redacted></p>
+                    <h1><img src="./images/Fernand.png" alt="Fernand Aranae Photograph"></h1>
+                    <p><u><b>Name:</b></u> Fernand Aranae</p>
+                    <p><u><b>ID:</b></u> N/A</p>
+                    <p><u><b>Document ID:</b></u> #DOC-3376263</p>
+                    <p><u><b>Age:</b></u> 43 (claimed)</p>
+                    <p><u><b>Profession:</b></u> Councilor in the Knights of Solaris</p>
+                    <p><u><b>Magic Capabilities:</b></u> Pyrokinetic (estimated natural output 14.3; estimated functional output 42.3)</p>
+                    <p><u><b>History:</b></u> Fernand Aranae’s origin, childhood, adolescence, and early adult life could not be determined. Aranae made himself known to the Knights of Solaris by defending a town whose militia was bedridden due to plague, aided only by his (now deceased) wife. Due to both his mind, power, and dedication, he rose up the ranks of the Knights and was granted the position of Councilor after ten years of service.</p>
+                    <p><u><b>Personality:</b></u> In public, Fernand Aranae wears a calm and gentle persona. This is a facade to conceal his violent and aggressive true nature. The man’s kindness does appear to be genuine, however. It has been noted that personal slights against him seem to have little to no effect, but the mere suggestion of harming an innocent can elicit a reaction which may cause significant property damage.</p>
+                    <p><u><b>Capability:</b></u> Due to his intense and ever-present rage, Fernand Aranae appears to have shattered his body’s natural limiter, resulting in his magic being permanently locked in the critical condition. As a result, Aranae’s pyrokinetic magic actually overshadows that of even a Fire Beast. This is a double-edged sword however, as Aranae struggles to control his magic, and has been reported losing control entirely, casting nonstop until passing out from overexertion. Aranae appears skilled in swordplay and flight on wyvernback, but not to the level of a trained soldier.</p>
+                    <p><u><b>Response:</b></u> Aranae cannot be killed in a direct confrontation. Assassination is not impossible, but due to his position it will be difficult to accomplish. However, Aranae is currently leading the military aspect of the Knights of Solaris’ campaign against us. If we can only ascertain when and where he and his forces will strike next, it will be an easy matter for a sniper to eliminate him.</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> <redacted>[REDACTED]</redacted></p>
+                    <h1><img src="./images/Aldritch.png" alt="Nathan Aldritch Photograph"></h1>
+                    <p><u><b>Name:</b></u> Nathan Aldritch</p>
+                    <p><u><b>ID:</b></u> #E-R-3253</p>
+                    <p><u><b>Age:</b></u> 93 (estimated)</p>
+                    <p><u><b>Profession:</b></u> Doctor, Surgeon, and Councilor in the Knights of Solaris</p>
+                    <p><u><b>Magic Capabilities:</b></u> Chemical (estimated output 57.9)</p>
+                    <p><u><b>History:</b></u> <redacted>[REDACTED]</redacted></p>
+                    <p><u><b>Personality:</b></u> An informant reported recently with “This man has never smiled in his life.” A crude statement, to be sure, but one that seems to match both the public’s opinion and that of those close to him. Highly cautious and dedicated to his work.</p>
+                    <p><u><b>Capability:</b></u> Dr. Nathan Aldritch is without question the most powerful user of chemical magic ever recorded. He has also been shown to be competent at cracking the encryption on our files and deciphering their contents. Since he appeared in the public eye during the war between Fierte and Gaela, several diseases have all but disappeared, thanks not only to his incredible power but also the medical techniques and procedures learned from studying our records. Thousands of people across the world owe him their lives.</p>
+                    <p><u><b>Response:</b></u> Given the man’s blatantly absurd magical ability, it is unclear whether we possess a weapon which can actually kill him. However, his cautious, reclusive nature and refusal to travel anywhere without a highly-armed guard renders this ability practically irrelevant. That said, our best chance of seeing the man dead is likely just to wait for old age to put him down for us.</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Tree.png" alt="Great Tree Photograph"></h1>
+                    <p><u><b>Subject:</b></u> #X-L-8733</p>
+                    <p><u><b>Common Name:</b></u> The Great Tree</p>
+                    <p><u><b>Age:</b></u> 1012 (estimated)</p>
+                    <p><u><b>Location:</b></u> 49.895, -287.413</p>
+                    <p><u><b>Magic Capabilities:</b></u> Chemical (hypothesized, estimated scale 273)</p>
+                    <p><u><b>Scale:</b></u> Height 97m; Trunk Diameter 31m; Inner Hollow Diameter 19m</p>
+                    <p><u><b>Reproductive Capabilities:</b></u> The subject appears incapable of reproduction. A full examination cannot be performed, therefore this remains theoretical.</p>
+                    <p><u><b>Description:</b></u> This subject is a large tree in southwest Gaela, just north of the Marillan territory. It bears a large hollow in the center of its trunk, which was repurposed into a stronghold occupied by bandits until the Fiertan/Gaelan war. It appears to have sprouted from pre-Surge Production Facility #4325. This facility was designed to mass-produce synthesized chemical magic, all of which appears to have been absorbed by the subject. This is speculated to be the reason this subject has grown to such an abnormal scale, and at such an abnormal rate.</p>
+                    <p><u><b>Examination Results:</b></u> The subject is all but impervious to harm. This is because the subject appears to have developed the ability to heal itself at an abnormal rate, most likely as a result of consuming synthesized chemical magic. Even simply obtaining samples of the subject’s bark proved difficult to achieve, and attempts to sample the wood beneath have ended in failure, as any cut we make is healed over before samples can be extracted. This subject has shown no signs of intelligence, and by thus no signs of being capable of utilizing this chemical magic to harm. Despite the interior having been converted into a stronghold, the subject shows no signs of infection or illness, past or present. All attempts to damage the subject with magic have ended in failure.</p>
+                    <p><u><b>Additional Details:</b></u> Though this subject is an organism, due to its scale and unique nature it has been classified as a location. This subject grew out of a production facility immediately adjacent to Examination Facility #348463, in which Subjects #E-D-1 and #E-D-2 were contained. It is a common belief that this subject is the birthplace of the goddesses Solaris and Eclipse. Though this belief is clearly false; if #E-D-1 and #E-D-2 escaped containment following the beginning of the subject’s growth, this would explain the belief’s origin. Will attempt to confirm or deny this theory in the near future.</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Island.png" alt="Barren Island Photograph"></h1>
+                    <p><u><b>Location ID:</b></u> #X-L-4753</p>
+                    <p><u><b>Common Name:</b></u> The Barren Isle</p>
+                    <p><u><b>Public Knowledge:</b></u> The Barren Isle is an uninhabited island off the northeast shore of Gaela. Little to no life lives on the island or in the surrounding waters. Dead, dried out vegetation can be found all over the island. Reportedly, desiccated carcasses of wildlife could also be found near the shore before the Holy Order arrived, took hold of the empty Facility #27325 for their own purposes, and removed them. Those who have been on the island reportedly often find themselves incapable of using magic. The majority of the island is covered in a forest of dead trees. There are no known records or folktales of people entering this forest ever returning.</p>
+                    <p></p>
+                    <p><u><b>Examination Results:</b></u></p>
+                    <p>All wireless communications cut out before reaching the island’s shore, and are impossible to reestablish without first moving a certain distance from the island. The use of drones to conduct unmanned surveys of the island is impossible. Just past the island’s shore, the same occurs for all electronic equipment. Though dead, the forest’s trees are too densely packed together to make out any significant details from afar. Seven parties have entered the forest to conduct examinations and collect samples. The party tasked with searching only a few meters past the forest’s perimeter is the only one to have returned. All employees who have set foot and remained on the island for longer than a day have reported feeling ill, but have not known how to describe their symptoms in detail. Each has undergone medical examinations following their return, and not one showed any sign of illness or injury.</p>
+                    <p>Samples have been collected including animal carcasses found just within the forest’s perimeter, pieces of vegetation, and several soil, rock, and water samples collected from all over the island. Barring the stomachs of the animal carcasses, no signs of decomposition have been found. All microorganisms found within collected samples appear to be as dead as the macroorganisms also collected.Carbon dating of the samples reveals that the death of every sample occurred approximately 1000 years ago.</p>
+                    <p></p>
+                    <p><u><b>Conclusions:</b></u></p>
+                    <p>Given the location of Facility #27325 on this island, what’s left of Facility #32387 must also be on this island, near the center in the depths of the forest. As Facility #32387 was the site at which Subject #E-D-3 was created, and by extension the origin point of The Surge, a number of conclusions can be drawn. The deaths of the organisms on this island was likely caused by the Surge itself. There appears to be some form of energy radiating from the center of this island which slowly kills organisms living on it. This explains why no decomposition has occurred, as no foreign microorganisms carried by the wind or water can survive long enough to decompose anything. This energy is likely also the cause of both our equipment malfunctions and the dysfunctionality of magic while on the island.</p>
+                    <p>As our equipment cannot function on the island, we are incapable of positively identifying the nature of this energy, though it is undoubtedly magic in nature. However, a likely hypothesis has been formed. Given the unique nature of this energy, which cannot be found anywhere else in the world, the source of it must be one-of-a-kind. Most likely, this energy emanates directly from Subject #E-D-3 itself, hidden in the depths of the island’s impassable forest.</p>
+                </div>
+
+                <div class="document">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Sea.png" alt="Carved Sea Photograph"></h1>
+                    <p><u><b>Subject:</b></u> #X-L-7327</p>
+                    <p><u><b>Common Name:</b></u> The Carved Sea</p>
+                    <p><u><b>Location:</b></u> Subject is located between Fierte and Gaela, and is far too large to be done justice with coordinates.</p>
+                    <p><u><b>Description:</b></u> A large body of water separating Fierte and Gaela, and serving as the primary trade route between the two countries. Storms out on this sea are known to be rare, but incredibly dangerous even by the standards of typical maritime storms. According to both the Holy Order’s religious texts and #E-D-2’s own account, this sea was carved out of the continent by a battle between #E-D-1 and #E-D-2 approximately 450 years ago, or 570 years following the Surge. Perdix Isle is the sole landmass located in this sea, though was not present until 13 years ago.</p>
+                    <p><u><b>Examination Results:</b></u> The waters in this sea are quite toxic, likely being filled with sediment from the decimated rock and soil resulting from #E-D-1 and #E-D-2’s battle. Due to the water’s toxicity, it is ill suited for sustaining life. A notable exception to this is right along the shores of Fierte, Gaela, and Perdix, where bivalves such as clams and oysters have been transplanted and begun spreading for the express purpose of cleaning the waters.</p>
+                    <p><u><b>Conclusions:</b></u> Nothing about this subject is relevant to Daedalus’ operations, but it will be interesting to observe how the efforts to clean the waters play out, and how far the habitable zone can be expanded.</p>
+                    <p><u><b>Additional Details:</b></u> Following the recent repairs of some critical equipment, there is reason to believe #E-D-0 may lie somewhere at the bottom of #X-L-7327. All attempts to reach the seafloor with a submarine have ended in failure. The wreckage of two of the seventeen dispatched submarines has been located, and appears to have been torn apart by some sort of organism. Tooth marks seem to be an approximate match for data regarding the jaw of #E-C-7423697. Investigating the organism responsible for destroying our vehicles and exploring #X-L-7327 to locate #E-D-0 is now Daedalus’ top priority.</p>
+                </div>
+
+                <div class="document" style="background: purple; border-color: gold; color: gold">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Eclipse.png" alt="Eclipse Photograph"></h1>
+                    <p><u><b>Subject:</b></u> #E-D-1</p>
+                    <p><u><b>Taken Name:</b></u> Eclipse</p>
+                    <p><u><b>Magic Capabilities:</b></u> Destruction (scale 9274)</p>
+                    <p><u><b>Current Status:</b></u> Restrained in Facility 463, beneath the palace in Nightwell</p>
+                    <p><u><b>Biology:</b></u> The subject’s true body- referred to as its “core”- is a sphere 15cm diameter. The subject then creates a false body around this core which can move and speak for the core. The subject appears to have created a favorite design for its false body: a human girl, appearing to be roughly ten years of age, with back-length violet hair, and irises and a dress of the same color. The subject is capable of altering this false body as they see fit, and appears to only restrains themselves to one form by choice. The subject’s core has been recorded moving of its own accord without a false body, and appears unaffected by gravity. All attempts to determine the molecular composition of both the subject’s core and false body have failed.</p>
+                    <p><u><b>History:</b></u> According to mythology and research, #E-D-1 and #E-D-2 predate the human race. Conversation with #E-D-1 prior to the subject’s capture indicates that the two predate all biological life as we know it. No information about #E-D-1’s history has been explicitly confirmed as truth. [Post-Surge Update: Following the Surge, the subject escaped containment. Additional details have been added at the bottom of the document.</p>
+                    <p><u><b>Personality:</b></u> Highly sadistic. During cooperation before the subject’s capture, attempts to conceal unrelated experiments and test subjects failed. Contrary to expectations, witnessing the suffering inflicted on test subjects appeared to bolster #E-D-1’s respect for Daedalus and willingness to cooperate. Subject appears to bear an extreme dislike for deception and refuses to partake in it, though does not appear to hold others to this same standard. Subject also appears to bear an intense hatred for #E-D-2.</p>
+                    <p><u><b>Capability:</b></u> The subject is capable of destroying energy. Further details are <redacted>[REDACTED]</redacted>.</p>
+                    <p><u><b>Examination Results:</b></u> <redacted>[REDACTED]</redacted></p>
+                    <p><u><b>Containment Procedures:</b></u> Keep the subject’s core contained within a custom-built capsule (which must contain a functional Magic Seal) at all times. Keep the capsule in a containment chamber with a secondary Magic Seal whenever possible as an additional precaution.</p>
+                    <p> </p>
+                    <p><u><b>Post-Surge History:</b></u></p>
+                    <p>Following the Surge, #E-D-1 escaped containment. Many of the following details have been pieced together from various myths, many of which have recently been confirmed by #E-D-2. Exact veracity cannot be confirmed.</p>
+                    <p>After escaping containment, #E-D-1 chose to aid humanity. #E-D-1 carved out a plateau to the Northeast on which the city Ecleau could be built and gathered human survivors to them, teaching them to use the magic they developed as a result of the Surge. Approximately two centuries after the Surge, #E-D-1 and #E-D-2 clashed once again, resulting in the carving of an ocean that did not previously exist. Realizing they could not continue their battle without further endangering those they had chosen to aid and protect, both retreated, leaving the humans they had aided to survive on their own merits.</p>
+                    <p>1013 years after the surge, both subjects returned. #E-D-2’s followers had formed the country Fierte and created a religion around them known as the “Holy Order of Solaris”, and had begun attempting to conquer the world in their goddess’ name, to “spread her glory” and all those other excuses power-hungry zealots spout. #E-D-1 caught wind of this and began aiding their efforts in secret, despite being known as the religion’s archenemy. Following the war between Gaela and Fierte, #E-D-1 was captured and restrained in Facility 463, and sentenced to be executed should a possible method be discovered.</p>
+                </div>
+
+                <div class="document" style="background: purple; border-color: gold; color: gold">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Solaris.png" alt="Solaris Photograph"></h1>
+                    <p><u><b>Subject:</b></u> #E-D-2</p>
+                    <p><u><b>Taken Name:</b></u> Solaris</p>
+                    <p><u><b>Addendum by Dr. Ethan Thorne:</b></u> Subject now also takes the name “Solaire” while masquerading as a human being.</p>
+                    <p><u><b>Magic Capabilities:</b></u> Creation (scale 9274)</p>
+                    <p><u><b>Current Status:</b></u> High Councilor of the Knights of Solaris</p>
+                    <p><u><b>Biology:</b></u> The subject’s true body- referred to as its “core”- is a sphere 15cm diameter. The subject’s core has been recorded moving of its own accord, and appears unaffected by gravity. All attempts to determine the molecular composition of the subject’s core have failed. It is speculated that the subject is capable of forming a false body similar to #E-D-1, but this is not confirmed. [Post-Surge Update: The subject is capable of creating a false body, and appears to have created a favorite design for it: a human woman, appearing to be roughly thirty years of age, with back-length blonde hair and blue irises which turn gold when the subject utilizes magic or wishes to emphasize their emotions. The subject’s light blue uniform appears to be legitimate cloth, rather than a part of the false body, but this has not been confirmed.</p>
+                    <p><u><b>History:</b></u> According to mythology and research, #E-D-1 and #E-D-2 predate the human race. Conversation with #E-D-1 prior to the subject’s capture indicates that the two predate all biological life as we know it. No information about #E-D-2’s history has been explicitly confirmed as truth. [Post-Surge Update: Following the Surge, the subject escaped containment. Additional details have been added at the bottom of the document.</p>
+                    <p><u><b>Personality:</b></u> The subject appears to bear an intense hatred for #E-D-1. Further details are unknown. [Post-Surge Update: The subject appears to care for humanity. By the subject’s own admission, the average human mind is approximately equal to the subject’s own in both intelligence and emotional range. The subject apparently aspires to aid and protect humanity however they can. However, the subject shows little desire to be merciful towards humans who commit what the subject considers atrocities in the subject’s name, being actively willing to eliminate them personally.</p>
+                    <p><u><b>Capability:</b></u> The subject is capable of creating energy. Further details are <redacted>[REDACTED]</redacted>. [Post-Surge Update: The subject has shown unexpected skill in leadership ability and military tactics.</p>
+                    <p><u><b>Examination Results:</b></u> <redacted>[REDACTED]</redacted></p>
+                    <p><u><b>Containment Procedures:</b></u> Keep the subject’s core contained within a custom-built capsule (which must contain a functional Magic Seal) at all times. Keep the capsule in a containment chamber with a secondary Magic Seal whenever possible as an additional precaution.</p>
+                    <p></p>
+                    <p><u><b>Post-Surge History:</b></u></p>
+                    <p>Following the Surge, #E-D-2 escaped containment. Many of the following details have been pieced together from various myths, many of which have recently been confirmed by #E-D-2. Exact veracity cannot be confirmed.</p>
+                    <p>After escaping containment, both subjects independently chose to aid humanity. #E-D-2 established a sanctuary in the crater of a dead volcano to the Southwest in which the city Nightwell was formed and gathered human survivors to them, teaching them to use the magic they developed as a result of the Surge.</p>
+                    <p>Approximately two centuries after the Surge, #E-D-1 and #E-D-2 clashed once again, resulting in the carving of an ocean that did not previously exist. Realizing they could not continue their battle without further endangering those they had chosen to aid and protect, both retreated, leaving the humans they had aided to survive on their own merits.</p>
+                    <p>1013 years after the surge, both subjects returned. #E-D-2’s followers had formed the country Fierte and created a religion around them known as the “Holy Order of Solaris”, and had begun attempting to conquer the world in their goddess’ name, to “spread her glory” and all those other excuses power-hungry zealots spout. #E-D-1 caught wind of this and began aiding their efforts in secret, despite being known as the religion’s archenemy. #E-D-2 could not convince their own so-called “followers” to cease their invasion, but could not afford another direct conflict with #E-D-1. The only response left to #E-D-2 was to form a new group known as the “Knights of Solaris” to aid those once saved by #E-D-1, who had come to form the country Gaela, in pushing the invaders out from their borders.</p>
+                </div>
+
+                <div class="document" style="background: purple; border-color: gold; color: gold">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/image_corrupted.png" alt="Daeus Photograph (corrupted)"></h1>
+                    <p><u><b>Subject:</b></u> #E-D-3</p>
+                    <p><u><b>Given Name:</b></u> Daeus</p>
+                    <p><u><b>Addendum by Dr. Ethan Thorne:</b></u> This name originates from a misspelling of the term “Deus”. I do not understand why so many employees have grown attached to this name, nor do I care to.</p>
+                    <p><u><b>Magic Capabilities:</b></u> Creation (scale 4637), Destruction (scale 4637)</p>
+                    <p><u><b>Biology:</b></u> The subject’s true body- referred to as its “core”- is a sphere 15cm diameter. It is speculated that the subject is capable of forming a false body similar to #E-D-1, but this is not confirmed.</p>
+                    <p><u><b>History:</b></u> The subject was created by Daedalus with magic extracted from #E-D-1 and #E-D-2, following extensive research into both. Upon completion of the project, the subject released a burst of energy which demolished Facility 522 and spread across the world.</p>
+                    <p><u><b>Addendum #2 by Dr. Ethan Thorne:</b></u> This burst of energy has come to be known as “The Surge”.</p>
+                    <p><u><b>Capability:</b></u> The subject is speculated to be capable of identical magical feats as #E-D-1 and #E-D-2, albeit with only half the power. Prototypes have accomplished similar feats on much smaller scales, but this merely supports the hypothesis, rather than confirm it. Unless the Surge is to be counted as a feat, the subject has no recorded feats.</p>
+                    <p><u><b>Examination Results:</b></u> N/A; No examinations were able to be performed.</p>
+                    <p><u><b>Containment Procedures:</b></u> Keep the subject’s core contained within a custom-built capsule (which must contain a functional Magic Seal) at all times. Keep the capsule in a containment chamber with a secondary Magic Seal whenever possible as an additional precaution. All procedures listed are speculative, as they have never had a chance to be put to use on this particular subject.</p>
+                    <p><u><b>Post-Surge History:</b></u> There have been no traces of #E-D-3 since the Surge. Their history and whereabouts are currently unknown, though they are speculated to lie beneath #X-L-4753.</p>
+                </div>
+
+                <div class="document" style="background: black; border-color: white; color: white">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/no_image_found.png" alt="Onos Photograph (none ever taken)"></h1>
+                    <p><u><b>Subject:</b></u> #E-D-0</p>
+                    <p><u><b>Given Name:</b></u> Onos (This name appears to have been given by #E-D-1 and #E-D-2. There is no indication if the subject is aware of this name.)</p>
+                    <p><u><b>Magic Capabilities:</b></u> Omnipotence (speculated, scale unknown)</p>
+                    <p><u><b>Biology:</b></u> Unknown. Distant observations indicate a core approximately 0.93 meters in diameter. The subject has not been observed moving or making use of a false body, but it is hypothesized that the subject is capable of doing so.</p>
+                    <p><u><b>History:</b></u> Unknown. (Post-Surge Update: #E-D-2 has stated that the subject is the creator of both #E-D-1 and #E-D-2, in addition to the world itself. The accuracy of this statement has not yet been determined.)</p>
+                    <p><u><b>Capability:</b></u> Unknown. It is speculated that this subject’s ability may be limited only by its perception and imagination, as opposed to any physical limitation.</p>
+                    <p><u><b>Examination Results:</b></u> N/A; No examinations were able to be performed.</p>
+                    <p><u><b>Containment Procedures:</b></u> <redacted>[REDACTED]</redacted></p>
+                    <p><u><b>Post-Surge History:</b></u> There have been no traces of #E-D-0 since the Surge. Their history and whereabouts are currently unknown.</p>
+                    <p><u><b>Addendum by Ethan Thorne:</b></u> Traces of power emanating from #E-D-0 have been detected, originating at the bottom of #X-L-7327. Due to some sort of interference, hypothesized to possibly be connected in some way to #E-C-7423697, the emanations origin point has not been successfully investigated.</p>
+                </div>
+
+                <div class="document" style="background: black; border-color: white; color: white">
+                    <p><u><b>Report Author:</b></u> Dr. Ethan Thorne</p>
+                    <h1><img src="./images/Aldritch.png" alt="Dr. Ethan Thorne Photograph"></h1>
+                    <p><u><b>Name:</b></u> Ethan Thorne</p>
+                    <p><u><b>ID:</b></u> #S-X-000000</p>
+                    <p><u><b>Pseudonym:</b></u> Nathan Aldritch</p>
+                    <p><u><b>Age:</b></u> 97 (biologically)</p>
+                    <p><u><b>Professions:</b></u> Founder, Owner, Overseer, and Executive Scientist of Daedalus Labs; Doctor, Surgeon, and Councilor in the Knights of Solaris</p>
+                    <p><u><b>Magic Capabilities:</b></u> Chemical (scale 61.3)</p>
+                    <p><u><b>Family:</b></u> None</p>
+                    <p><u><b>History:</b></u> Long forgotten, with all records of it corrupted and lost.</p>
+                    <p><u><b>Key Details:</b></u> I am Dr. Ethan Thorne. If you are reading this document, I am likely dead, and Daedalus destroyed, and all my hard work has been for naught. If this is not the case, your device is broadcasting a signal to every one of our facilities at this moment, and aerial bombardment will be deployed at your location shortly. But if it is true, and I have well and truly failed, I can only presume you were my enemy, in which case: congratulations.</p>
+                    <p><u><b>Additional Details:</b></u> I am not a petty man. The chip containing the access code to this document you no doubt found during my autopsy also contains the coordinates to a facility even my own employees are unaware of. In this facility, you will find a list of coordinates for every Daedalus facility still operational. It also contains the access code to a list of every employee past and present to ever work for Daedalus. My part in this conflict has ended; the least I can do is allow a swift resolution.</p>
+                    <p><u><b>Conclusion:</b></u> This is likely the part where I should apologize and air my grievances or something, but I don’t care. Words of those natures are meaningless, especially from me. If I am dead, it will be without any worthless feelings like guilt, only regretting the countermeasures I failed to take that would have ensured my success. To the world I’ve left behind and everything and everyone in it, goodbye and good riddance.</p>
+                </div>
+
+
+                <div class="tab_results">
+                    <div class="document">
+                        <p style="margin-top: 0px; margin-bottom: -10px; text-align: center">Please select the document you wish to view.</p>
+                    </div>
+
+                    <div class="doc" onclick="Sterling()">
+                        <img src="./images/Sterling.png" alt="Yvonne Sterling Photograph">
+                        <div>
+                            <p><u><b>Name:</b></u> Yvonne Sterling</p>
+                            <p><u><b>ID:</b></u> #S-G-362867</p>
+                        </div>
+                    </div>
+
+                    <div class="doc" onclick="Victor()">
+                        <img src="./images/Victor.png" alt="Victor Cromwell Photograph">
+                        <div>
+                            <p><u><b>Name:</b></u> Victor Cromwell</p>
+                            <p><u><b>ID:</b></u> #E-S-732873</p>
+                        </div>
+                    </div>
+
+                    <div class="doc" onclick="Angel()">
+                        <img src="./images/Angel.png" alt="Angel Hosanna Photograph">
+                        <div>
+                            <p><u><b>Name:</b></u> Angel Hosanna</p>
+                            <p><u><b>ID:</b></u> #S-G-264357</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab_results">
+                    <div class="document">
+                        <p style="margin-top: 0px; margin-bottom: -10px; text-align: center">Please select the document you wish to view.</p>
+                    </div>
+
+                    <div class="doc" onclick="Fire_Beast()">
+                        <img src="./images/Fire_Beast.png" alt="Fire Beast Photograph">
+                        <div>
+                            <p><u><b>Common Name:</b></u> Fire Beast</p>
+                            <p><u><b>ID:</b></u> #E-C-4633766</p>
+                        </div>
+                    </div>
+
+                    <div class="doc" onclick="Frost_Beast()">
+                        <img src="./images/Frost_Beast.png" alt="Frost Beast Photograph">
+                        <div>
+                            <p><u><b>Common Name:</b></u> Frost Beast</p>
+                            <p><u><b>ID:</b></u>  #E-C-4722437</p>
+                        </div>
+                    </div>
+
+                    <div class="doc" onclick="Shadow_Beast()">
+                        <img src="./images/image_corrupted.png" alt="Shadow Beast Photograph (corrupted)">
+                        <div>
+                            <p><u><b>Common Name:</b></u> Shadow Beast</p>
+                            <p><u><b>ID:</b></u> #E-C-7423697</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab_results">
+                    <div class="document">
+                        <p style="margin-top: 0px; margin-bottom: -10px; text-align: center">Please select the document you wish to view.</p>
+                    </div>
+
+                    <div class="doc" onclick="Edrick()">
+                        <img src="./images/Edrick.png" alt="Edrick Silvath Photograph">
+                        <div>
+                            <p><u><b>Name:</b></u> Edrick Silvath</p>
+                            <p><u><b>ID:</b></u> N/A</p>
+                            <p><u><b>Document ID:</b></u> #DOC-337425</p>
+                        </div>
+                    </div>
+
+                    <div class="doc" onclick="Fernand()">
+                        <img src="./images/Fernand.png" alt="Fernand Aranae Photograph">
+                        <div>
+                            <p><u><b>Name:</b></u> Fernand Aranae</p>
+                            <p><u><b>ID:</b></u> N/A</p>
+                            <p><u><b>Document ID:</b></u> DOC-#3376263</p>
+                        </div>
+                    </div>
+
+                    <div class="doc" onclick="Aldritch()">
+                        <img src="./images/Aldritch.png" alt="Nathan Aldritch Photograph">
+                        <div>
+                            <p><u><b>Name:</b></u> Nathan Aldritch</p>
+                            <p><u><b>ID:</b></u> #E-R-3253</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab_results">
+                    <div class="document">
+                        <p style="margin-top: 0px; margin-bottom: -10px; text-align: center">Please select the document you wish to view.</p>
+                    </div>
+
+                    <div class="doc" onclick="Tree()">
+                        <img src="./images/Tree.png" alt="Great Tree Photograph">
+                        <div>
+                            <p><u><b>Common Name:</b></u> The Great Tree</p>
+                            <p><u><b>ID:</b></u> #X-L-8733</p>
+                        </div>
+                    </div>
+
+                    <div class="doc" onclick="Island()">
+                        <img src="./images/Island.png" alt="Barren Island Photograph">
+                        <div>
+                            <p><u><b>Name:</b></u> The Barren Island</p>
+                            <p><u><b>ID:</b></u> #X-L-4753</p>
+                        </div>
+                    </div>
+
+                    <div class="doc" onclick="Sea()">
+                        <img src="./images/Sea.png" alt="Carved Sea Photograph">
+                        <div>
+                            <p><u><b>Name:</b></u> The Carved Sea</p>
+                            <p><u><b>ID:</b></u> #X-L-7327</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab_results">
+                    <div class="document">
+                        <p style="margin-top: 0px; text-align: center">Classified documents cannot be viewed in this manner.</p>
+                        <p style="margin-bottom: -10px; text-align: center">Please input the ID of the document you wish to view.</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <!--Daedalus Logo-->
+            <div class="logo">
+                <svg version="1.1"
+                     viewBox="13 15 150 250"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <title>#S-X-000000</title>
+
+                    <polygon points="17 75 110 150 17 225"
+                             stroke="darkred" fill="lightgray" stroke-width="7" />
+
+                    <polygon points="17 75 110 150 17 225"
+                             stroke="red" fill="lightgray" stroke-width="5" />
+
+                    <polygon points="50 126 55 144 70 144 60 154 65 169 50 159 35 169 40 154 30 144 45 144"
+                             stroke="purple" fill="gold" stroke-width="1" />
+
+                    <polygon points="50 174 55 156 70 156 60 146 65 131 50 141 35 131 40 146 30 156 45 156"
+                             stroke="gold" fill="purple" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>©Daedalus Laboratories</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
