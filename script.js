@@ -35,6 +35,10 @@ var SolarisHTML = Check_Documents[14].outerHTML;
 var DaeusHTML = Check_Documents[15].outerHTML;
 var OnosHTML = Check_Documents[16].outerHTML;
 var ThorneHTML = Check_Documents[17].outerHTML;
+var KineticBeastHTML = Check_Documents[18].outerHTML;
+var ChemicalBeastHTML = Check_Documents[19].outerHTML;
+var ShockBeastHTML = Check_Documents[20].outerHTML;
+var ShadeofDaedalusHTML = Check_Documents[21].outerHTML;
 
 var Set1HTML = Check_Sets[0].outerHTML;
 var Set2HTML = Check_Sets[1].outerHTML;
@@ -129,8 +133,32 @@ function Search() {
         Buttons[1].style.color = "#ffffff";
         Buttons[1].style.background = "#ff0303";
     }
+    else if (typedID.toLowerCase() == "#e-c-998376" || typedID.toLowerCase() == "e-c-998376") {
+        Displayed_Document.innerHTML = KineticBeastHTML;
+        Reset_Buttons();
+        Buttons[1].style.marginRight = "-7%";
+        Buttons[1].style.color = "#ffffff";
+        Buttons[1].style.background = "#ff0303";
+    }
+
+    else if (typedID.toLowerCase() == "#e-c-4588866" || typedID.toLowerCase() == "e-c-4588866") {
+        Displayed_Document.innerHTML = ChemicalBeastHTML;
+        Reset_Buttons();
+        Buttons[1].style.marginRight = "-7%";
+        Buttons[1].style.color = "#ffffff";
+        Buttons[1].style.background = "#ff0303";
+    }
+
     else if (typedID.toLowerCase() == "#e-c-7423697" || typedID.toLowerCase() == "e-c-7423697") {
         Displayed_Document.innerHTML = ShadowBeastHTML;
+        Reset_Buttons();
+        Buttons[1].style.marginRight = "-7%";
+        Buttons[1].style.color = "#ffffff";
+        Buttons[1].style.background = "#ff0303";
+    }
+
+    else if (typedID.toLowerCase() == "#x-e-c-86786473" || typedID.toLowerCase() == "x-e-c-86786473") {
+        Displayed_Document.innerHTML = ShockBeastHTML;
         Reset_Buttons();
         Buttons[1].style.marginRight = "-7%";
         Buttons[1].style.color = "#ffffff";
@@ -181,6 +209,15 @@ function Search() {
         Buttons[3].style.background = "#ff0303";
     }
     //Set 5 (Hidden Set)
+    else if (typedID.toLowerCase() == "#doc-545537" || typedID.toLowerCase() == "doc-545537") {
+        Displayed_Document.innerHTML = ShadeofDaedalusHTML;
+        Reset_Buttons();
+        Buttons[4].style.marginRight = "-7%";
+        Buttons[4].style.color = "gold";
+        Buttons[4].style.background = "purple";
+        Buttons[4].style.borderColor = "mediumpurple";
+        document.body.style.background = "#3f0695";
+    }
     else if (typedID.toLowerCase() == "#e-d-1" || typedID.toLowerCase() == "e-d-1") {
         Displayed_Document.innerHTML = EclipseHTML;
         Reset_Buttons();
@@ -230,6 +267,7 @@ function Search() {
     else {
         Displayed_Document[0].innerHTML = "<div class=\"document\">" + "No matching documents found" + "</div>";
     }
+    scroll(0, 0);
 }
 
 //Reset buttons and a couple other things
@@ -323,8 +361,23 @@ function Frost_Beast() {
     Search();
 }
 
+function Kinetic_Beast() {
+    typedID = "#E-C-998376"
+    Search();
+}
+
+function Chemical_Beast() {
+    typedID = "#E-C-4588866"
+    Search();
+}
+
 function Shadow_Beast() {
     typedID = "#E-C-7423697"
+    Search();
+}
+
+function Shock_Beast() {
+    typedID = "#X-E-C-86786473"
     Search();
 }
 
