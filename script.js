@@ -39,6 +39,7 @@ var KineticBeastHTML = Check_Documents[18].outerHTML;
 var ChemicalBeastHTML = Check_Documents[19].outerHTML;
 var ShockBeastHTML = Check_Documents[20].outerHTML;
 var ShadeofDaedalusHTML = Check_Documents[21].outerHTML;
+var ObstructiveBeastHTML = Check_Documents[22].outerHTML;
 
 var Set1HTML = Check_Sets[0].outerHTML;
 var Set2HTML = Check_Sets[1].outerHTML;
@@ -75,7 +76,7 @@ function ValidateDevice() {
         formerlyvalid = true;
     }
     else {
-        DefaultHTML.innerHTML = "<header></header><main><div class=\"document\"><p>This is not an official Daedalus-issued device.</p> <p>If you wish to view documents within this database, please use an official Daedalus-issued device.</p></div></main><footer></footer>"
+        DefaultHTML.innerHTML = "<header></header><main><div class=\"document\"><p>This is not an official Daedalus-issued device.</p> <p>If you wish to view documents within this database, please use an official Daedalus-issued device.</p> <p style=\"color: lightgray; margin-top: 7%\">(Sorry! This site doesn't work on mobile yet!)</p></div></main><footer></footer>"
         formerlyvalid = false;
     }
 }
@@ -135,6 +136,14 @@ function Search() {
     }
     else if (typedID.toLowerCase() == "#e-c-998376" || typedID.toLowerCase() == "e-c-998376") {
         Displayed_Document.innerHTML = KineticBeastHTML;
+        Reset_Buttons();
+        Buttons[1].style.marginRight = "-7%";
+        Buttons[1].style.color = "#ffffff";
+        Buttons[1].style.background = "#ff0303";
+    }
+
+    else if (typedID.toLowerCase() == "#e-c-8642676" || typedID.toLowerCase() == "e-c-8642676") {
+        Displayed_Document.innerHTML = ObstructiveBeastHTML;
         Reset_Buttons();
         Buttons[1].style.marginRight = "-7%";
         Buttons[1].style.color = "#ffffff";
@@ -363,6 +372,11 @@ function Frost_Beast() {
 
 function Kinetic_Beast() {
     typedID = "#E-C-998376"
+    Search();
+}
+
+function Obstructive_Beast() {
+    typedID = "#E-C-8642676"
     Search();
 }
 
