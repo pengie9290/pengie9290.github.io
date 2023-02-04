@@ -42,7 +42,8 @@ main {
     margin-right: 7%;
     font-size: 20px;
     padding-top: 15px;
-    color: #ff0303
+    color: #ff0303;
+    cursor: pointer;
 }
 
 .search_button {
@@ -51,6 +52,7 @@ main {
     margin: 7%;
     font-size: 15px;
     color: #187e7a;
+    cursor: pointer;
 }
 
 .searchbar {
@@ -91,6 +93,7 @@ main {
     border: 2px solid black;
     display: grid;
     grid-template-columns: 30% 70%;
+    cursor: pointer;
 }
 
 .doc img {
