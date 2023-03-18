@@ -32,14 +32,14 @@ main {
     background: #2fb0ac;
     height: 640px;
     display: grid;
-    grid-template-rows: 140px 100px 100px 100px 100px 100px;
+    grid-template-rows: 140px 80px 80px 80px 80px 80px 80px;
 }
 
 .side_button {
     border: 3px solid #187e7a;
     background: #63dbd7;
     margin: 7%;
-    margin-right: 7%;
+    margin-bottom: 0%;
     font-size: 20px;
     padding-top: 15px;
     color: #ff0303;

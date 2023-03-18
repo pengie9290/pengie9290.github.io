@@ -46,6 +46,7 @@ var Set2HTML = Check_Sets[1].outerHTML;
 var Set3HTML = Check_Sets[2].outerHTML;
 var Set4HTML = Check_Sets[3].outerHTML;
 var Set5HTML = Check_Sets[4].outerHTML;
+var LastSetHTML = Check_Sets[Check_Sets.length - 1].outerHTML;
 
 
 //Clear displayed documents
@@ -217,59 +218,68 @@ function Search() {
         Buttons[3].style.color = "#ffffff";
         Buttons[3].style.background = "#ff0303";
     }
-    //Set 5 (Hidden Set)
+    //Set 5
+    else if (typedID.toLowerCase() == "#x-l-7327" || typedID.toLowerCase() == "x-l-7327") {
+        Displayed_Document.innerHTML = CarvedSeaHTML;
+        Reset_Buttons();
+        Buttons[4].style.marginRight = "-7%";
+        Buttons[4].style.color = "#ffffff";
+        Buttons[4].style.background = "#ff0303";
+    }
+
+    //CLASSIFIED SET
     else if (typedID.toLowerCase() == "#doc-545537" || typedID.toLowerCase() == "doc-545537") {
         Displayed_Document.innerHTML = ShadeofDaedalusHTML;
         Reset_Buttons();
-        Buttons[4].style.marginRight = "-7%";
-        Buttons[4].style.color = "gold";
-        Buttons[4].style.background = "purple";
-        Buttons[4].style.borderColor = "mediumpurple";
+        Buttons[Buttons.length - 1].style.marginRight = "-7%";
+        Buttons[Buttons.length - 1].style.color = "gold";
+        Buttons[Buttons.length - 1].style.background = "purple";
+        Buttons[Buttons.length - 1].style.borderColor = "mediumpurple";
         document.body.style.background = "#3f0695";
     }
     else if (typedID.toLowerCase() == "#e-d-1" || typedID.toLowerCase() == "e-d-1") {
         Displayed_Document.innerHTML = EclipseHTML;
         Reset_Buttons();
-        Buttons[4].style.marginRight = "-7%";
-        Buttons[4].style.color = "gold";
-        Buttons[4].style.background = "purple";
-        Buttons[4].style.borderColor = "mediumpurple";
+        Buttons[Buttons.length - 1].style.marginRight = "-7%";
+        Buttons[Buttons.length - 1].style.color = "gold";
+        Buttons[Buttons.length - 1].style.background = "purple";
+        Buttons[Buttons.length - 1].style.borderColor = "mediumpurple";
         document.body.style.background = "#3f0695";
     }
     else if (typedID.toLowerCase() == "#e-d-2" || typedID.toLowerCase() == "e-d-2") {
         Displayed_Document.innerHTML = SolarisHTML;
         Reset_Buttons();
-        Buttons[4].style.marginRight = "-7%";
-        Buttons[4].style.color = "gold";
-        Buttons[4].style.background = "purple";
-        Buttons[4].style.borderColor = "mediumpurple";
+        Buttons[Buttons.length - 1].style.marginRight = "-7%";
+        Buttons[Buttons.length - 1].style.color = "gold";
+        Buttons[Buttons.length - 1].style.background = "purple";
+        Buttons[Buttons.length - 1].style.borderColor = "mediumpurple";
         document.body.style.background = "#3f0695";
     }
     else if (typedID.toLowerCase() == "#e-d-3" || typedID.toLowerCase() == "e-d-3") {
         Displayed_Document.innerHTML = DaeusHTML;
         Reset_Buttons();
-        Buttons[4].style.marginRight = "-7%";
-        Buttons[4].style.color = "gold";
-        Buttons[4].style.background = "purple";
-        Buttons[4].style.borderColor = "mediumpurple";
+        Buttons[Buttons.length - 1].style.marginRight = "-7%";
+        Buttons[Buttons.length - 1].style.color = "gold";
+        Buttons[Buttons.length - 1].style.background = "purple";
+        Buttons[Buttons.length - 1].style.borderColor = "mediumpurple";
         document.body.style.background = "#3f0695";
     }
     else if (typedID.toLowerCase() == "#e-d-0" || typedID.toLowerCase() == "e-d-0") {
         Displayed_Document.innerHTML = OnosHTML;
         Reset_Buttons();
-        Buttons[4].style.marginRight = "-7%";
-        Buttons[4].style.color = "gold";
-        Buttons[4].style.background = "purple";
-        Buttons[4].style.borderColor = "mediumpurple";
+        Buttons[Buttons.length - 1].style.marginRight = "-7%";
+        Buttons[Buttons.length - 1].style.color = "gold";
+        Buttons[Buttons.length - 1].style.background = "purple";
+        Buttons[Buttons.length - 1].style.borderColor = "mediumpurple";
         document.body.style.background = "black";
     }
     else if (typedID.toLowerCase() == "#s-x-000000" || typedID.toLowerCase() == "s-x-000000") {
         Displayed_Document.innerHTML = ThorneHTML;
         Reset_Buttons();
-        Buttons[4].style.marginRight = "-7%";
-        Buttons[4].style.color = "gold";
-        Buttons[4].style.background = "purple";
-        Buttons[4].style.borderColor = "mediumpurple";
+        Buttons[Buttons.length - 1].style.marginRight = "-7%";
+        Buttons[Buttons.length - 1].style.color = "gold";
+        Buttons[Buttons.length - 1].style.background = "purple";
+        Buttons[Buttons.length - 1].style.borderColor = "mediumpurple";
         document.body.style.background = "black";
     }
 
@@ -286,9 +296,9 @@ function Reset_Buttons(){
         Buttons[i].style.color = "#ff0303";
         Buttons[i].style.background = "#63dbd7";
     }
-    Buttons[4].style.color = "#ff0303";
-    Buttons[4].style.background = "#262626";
-    Buttons[4].style.borderColor = "#187e7a";
+    Buttons[Buttons.length - 1].style.color = "#ff0303";
+    Buttons[Buttons.length - 1].style.background = "#262626";
+    Buttons[Buttons.length - 1].style.borderColor = "#187e7a";
     document.body.style.background = "lightcyan";
 }
 
@@ -334,14 +344,25 @@ function Locations_of_Interest() {
     Buttons[3].style.background = "#ff0303";
 }
 
-function CLASSIFIED() {
+function Events() {
     Reset_Buttons();
     ClearAll();
     Displayed_Document.innerHTML = "";
     Displayed_Document.innerHTML = Set5HTML;
     Buttons[4].style.marginRight = "-7%";
-    //Buttons[4].style.color = "#ffffff";
-    //Buttons[4].style.background = "#ff0303";
+    Buttons[4].style.color = "#ffffff";
+    Buttons[4].style.background = "#ff0303";
+}
+
+
+function CLASSIFIED() {
+    Reset_Buttons();
+    ClearAll();
+    Displayed_Document.innerHTML = "";
+    Displayed_Document.innerHTML = LastSetHTML;
+    Buttons[Buttons.length - 1].style.marginRight = "-7%";
+    //Buttons[Buttons.length - 1].style.color = "#ffffff";
+    //Buttons[Buttons.length - 1].style.background = "#ff0303";
 }
 
 //Allows documents to be clicked
@@ -424,17 +445,3 @@ function Sea() {
     typedID = "#X-L-7327"
     Search();
 }
-
-
-
-
-
-
-
-//Wireframing:
-//For the past several years, I have been working on a world known as “Starrise”.
-//Though originally it was a collaborative work made by myself and my best friend, my co - writer has since grown tired of it and given me complete creative control of the project.
-//The single biggest driving force of this fantasy world is the scientific organization known as Daedalus Labs, led by the story’s big bad, Dr.Ethan Thorne.
-//Something I often do is write in -universe "lab reports" and other assorted documents, with the intention of them having been written by Daedalus employees and stored in their database.
-//For this assignment, I've chosen to make this very database, albeit with only a fraction of the documents that would exist in the in-universe one.
-//(I'm only one guy; I can only write so much.)
